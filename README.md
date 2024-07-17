@@ -1,0 +1,1 @@
+# arden-email-template
