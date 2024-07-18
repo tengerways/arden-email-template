@@ -1,10 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function CreateEmail() {
+
+    const navigate = useNavigate();
+
+    const handleBack = (e) => {
+        e.preventDefault();
+        navigate('/manage-emails');
+    };
+
     return(
         <>
-            <Link to="/manage-emails" className="btn btn-outline-dark"><i className="bi bi-chevron-left"></i> Back</Link>
+            <button onClick={handleBack} className="btn btn-outline-dark"><i className="bi bi-chevron-left"></i> Back</button>
             <div className='dashboard-title my-3'>
                 <h1>Create Email</h1>
             </div>

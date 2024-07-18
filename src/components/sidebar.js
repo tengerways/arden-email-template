@@ -3,11 +3,14 @@ import React from 'react';
 import 'boxicons';
 import { Link } from 'react-router-dom';
 import ProfileImg from '../../src/assets/images/profile-img.svg'
-
+import { useNavigate } from 'react-router-dom'
 
 const { useState, useEffect } = React
 
 const Sidebar = ({ percent }) => {
+
+  const navigate = useNavigate();
+
   const useMediaQuery = (query) => {
     const [matches, setMatches] = useState(false);
 
@@ -35,14 +38,14 @@ const Sidebar = ({ percent }) => {
       iconName: "home",
       color: "#041c74",
       type: "solid",
-      route: "/dashboard",
+      path: "/dashboard",
     },
     {
       name: "Manage Emails",
       iconName: "envelope",
       color: "#041c74",
       type: "solid",
-      route: "/manage-emails",
+      path: "/manage-emails",
     },
     {
       name: "Log Out",
@@ -93,7 +96,7 @@ const Sidebar = ({ percent }) => {
           middle = true;
         }
         return (
-          <Link
+          <div
             className={`boxicon-container ${
               expanded && "expanded-boxicon-container"
             }`}
@@ -107,16 +110,16 @@ const Sidebar = ({ percent }) => {
                 setHovered(null);
               }
             }}
-            onClick={() => {
-              if (middle) {
-                setActive(index);
-              }
-              if (index === 0) {
-                setExpanded(!expanded);
-              }
-            }}
+            // onClick={() => {
+            //   if (middle) {
+            //     setActive(index);
+            //   }
+            //   if (index === 0) {
+            //     setExpanded(!expanded);
+            //   }
+            // }}
             key={index}
-            to={item.route}
+            onClick={() => navigate(item.path)}
           >
                 <box-icon
                 class={`${middle && "boxicon"} 
@@ -138,7 +141,7 @@ const Sidebar = ({ percent }) => {
                 >
                 {item.name}
                 </p>
-          </Link>
+          </div>
         );
       })}
     </div>

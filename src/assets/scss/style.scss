@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f6fafe;
@@ -27,13 +28,13 @@ body {
         box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
         text-align: center;
         h1 {
-            font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
             font-size: 2.5rem;
             font-weight: 700;
             color: #000;
         }
         legend {
-            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
             font-size: 1.5rem;
             font-weight: 600;
             color: #041c74;
@@ -41,7 +42,7 @@ body {
             margin-bottom: 20px;
         }
         p {
-            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
             font-size: 1rem;
             font-weight: 400;
             color: #000;
@@ -53,7 +54,7 @@ body {
 .btn-primary {
     background-color: #041c74;
     border: 1px solid #041c74;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     font-weight: 600;
     color: #fff;
@@ -165,7 +166,7 @@ body {
     left: 3rem;
     z-index: 10;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0;
     color: #fff;
     transition: 0.2s opacity;
@@ -209,7 +210,7 @@ body {
     margin: 0;
     padding: 0;
     h1 {
-        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-size: 2rem;
         font-weight: 700;
         color: #333;
@@ -219,7 +220,7 @@ body {
     background-color: rgba(4, 28, 116, 1);
     border-radius: 10px;
     padding: 18px;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
     color: #fff;
@@ -256,7 +257,7 @@ body {
             justify-content: center;
         }
         h3 {
-            font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
             font-size: 2.125rem;
             font-weight: 700;
             color: #374064;
@@ -380,7 +381,7 @@ body {
         background-color: #65cc48;
         border-radius: 8px 8px 0 0;
         padding: 8px;
-        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
         font-size: 1.125rem;
         font-weight: 600;
         color: #fff;

@@ -1,7 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function ManageEmails() {
+
+    const navigate = useNavigate();
+
+    const handleCreateEmail = (e) => {
+        e.preventDefault();
+        navigate('/create-email');
+    };
+
+    const handleViewEmail = (e) => {
+        e.preventDefault();
+        navigate('/view-email');
+    };
+
     return(
         <>
             <div className='dashboard-title mb-3'>
@@ -34,7 +47,7 @@ function ManageEmails() {
                 </div>
                 <div className="col-12 col-lg-3">
                     <div className="">
-                        <Link to="/create-email" className="btn btn-primary w-100 p-4">Create new Email</Link>
+                        <button type="button" onClick={handleCreateEmail} className="btn btn-primary w-100 p-4">Create new Email</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +72,7 @@ function ManageEmails() {
                                 <td>25 June 2024</td>
                                 <td>Sent</td>
                                 <td>
-                                    <i className="bi bi-eye me-2"></i>
+                                    <a href="" onClick={handleViewEmail}><i className="bi bi-eye me-2"></i></a>
                                     <i className="bi bi-trash"></i>
                                 </td>
                             </tr>
@@ -70,7 +83,7 @@ function ManageEmails() {
                                 <td>21 June 2024</td>
                                 <td>Sent</td>
                                 <td>
-                                    <i className="bi bi-eye me-2"></i>
+                                    <a href="" onClick={handleViewEmail}><i className="bi bi-eye me-2"></i></a>
                                     <i className="bi bi-trash"></i>
                                 </td>
                             </tr>
@@ -81,7 +94,7 @@ function ManageEmails() {
                                 <td>20 June 2024</td>
                                 <td>Draft</td>
                                 <td>
-                                    <i className="bi bi-pencil-fill me-2"></i>
+                                    <a href="" onClick={handleViewEmail}><i className="bi bi-eye me-2"></i></a>
                                     <i className="bi bi-trash"></i>
                                 </td>
                             </tr>
@@ -92,7 +105,7 @@ function ManageEmails() {
                                 <td>19 June 2024</td>
                                 <td>Sent</td>
                                 <td>
-                                    <i className="bi bi-eye me-2"></i>
+                                    <a href="" onClick={handleViewEmail}><i className="bi bi-eye me-2"></i></a>
                                     <i className="bi bi-trash"></i>
                                 </td>
                             </tr>

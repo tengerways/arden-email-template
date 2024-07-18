@@ -3,8 +3,17 @@ import TotalEmails from '../../assets/images/total-email.svg'
 import TodayEmails from '../../assets/images/today-email.svg'
 import PieChart from '../../assets/images/pie-chart.svg'
 import Refresh from '../../assets/images/refresh.svg'
+import { useNavigate } from 'react-router-dom'
 
 function Dashboard(){
+
+    const navigate = useNavigate();
+
+    const handleViewEmail = (e) => {
+        e.preventDefault();
+        navigate('/view-email');
+    };
+
     return(
         <>
             <div className='dashboard-title mb-3'>
@@ -48,31 +57,31 @@ function Dashboard(){
                                         <th scope="row">1</th>
                                         <td>Lorem ipsum</td>
                                         <td>25 June 2024</td>
-                                        <td><a href='#'><i className='bi bi-eye'></i></a></td>
+                                        <td><a href='' onClick={handleViewEmail}><i className='bi bi-eye'></i></a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>Lorem ipsum</td>
                                         <td>25 June 2024</td>
-                                        <td><a href='#'><i className='bi bi-eye'></i></a></td>
+                                        <td><a href='' onClick={handleViewEmail}><i className='bi bi-eye'></i></a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
                                         <td>Lorem ipsum</td>
                                         <td>25 June 2024</td>
-                                        <td><a href='#'><i className='bi bi-eye'></i></a></td>
+                                        <td><a href='' onClick={handleViewEmail}><i className='bi bi-eye'></i></a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
                                         <td>Lorem ipsum</td>
                                         <td>25 June 2024</td>
-                                        <td><a href='#'><i className='bi bi-eye'></i></a></td>
+                                        <td><a href='' onClick={handleViewEmail}><i className='bi bi-eye'></i></a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">5</th>
                                         <td>Lorem ipsum</td>
                                         <td>25 June 2024</td>
-                                        <td><a href='#'><i className='bi bi-eye'></i></a></td>
+                                        <td><a href='' onClick={handleViewEmail}><i className='bi bi-eye'></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
